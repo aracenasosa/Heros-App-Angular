@@ -1,0 +1,18 @@
+.img-carousel {
+    height: 750px;
+    background: cover;
+    background: no-repeat;
+    background-attachment: fixed;
+}
+
+#testimonial {
+    background: #ecf0f1;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#stan:hover{
+    text-decoration: underline;
+}

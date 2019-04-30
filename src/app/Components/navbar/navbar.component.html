@@ -1,0 +1,32 @@
+<!--Main Navigation-->
+<header>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink blue-gradient scrolling-navbar">
+    <img src="../../../favicon.ico" style="width: 50px"> <a class="navbar-brand"
+      href="#"><strong>HerosApp</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['home']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['heros']">Heros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['about']">About</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" (keyup)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+</header>
+<!--Main Navigation-->

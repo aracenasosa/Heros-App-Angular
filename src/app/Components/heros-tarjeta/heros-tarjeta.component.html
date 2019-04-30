@@ -1,0 +1,27 @@
+
+
+  <!-- Card -->
+<div class="card animated fadeIn fast">
+
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top animated fadeIn" src="{{ heroes.img }}" alt="{{ heroes.nombre }}">
+      <a href="/heros">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body">
+  
+      <!-- Title -->
+      <h4 class="card-title"> {{ heroes.nombre }} </h4>
+      <!-- Text -->
+      <p class="card-text"> {{heroes.bio}} </p>
+      <!-- Button -->
+      <button (click)="verHeroe()" class="btn btn-primary btn-block">Read More</button>
+  
+    </div>
+  
+  </div>
+  <!-- Card -->

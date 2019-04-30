@@ -1,0 +1,16 @@
+<div class="container" style="margin-top: 100px">
+    <h1 class="display-4">Search of {{ termino }}</h1>
+    <hr>
+  <div class="row">
+    <div class="col-md-12 animated fadeIn fast" *ngIf="searchHeros.length === 0">
+        <div class="alert alert-danger" role="alert">
+            No existen resultados con el termino: {{ termino }}
+          </div>
+    </div>
+    <app-heros-tarjeta class="col-12 col-md-4" [heroes]="item" [index]="item.idx" *ngFor="let item of searchHeros;">
+      </app-heros-tarjeta>
+  </div>
+</div>
+
+<div style="margin-bottom: 100px;"></div>
+

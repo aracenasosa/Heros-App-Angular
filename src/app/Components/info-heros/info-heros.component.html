@@ -1,0 +1,75 @@
+
+<div class="container" style="margin-top: 100px;">
+<h1 class="display-4 animated fadeIn ">{{ heros.nombre | uppercase}} <small>({{ heros.aparicion | date:'y'}})</small></h1>
+<hr>
+  <div class="row animated fadeIn fast">
+    <div class="col-md-4">
+      <img src="{{ heros.img }}" alt="{{ heros.nombre }}" class="img-fluid">
+      <br><br>
+      <a [routerLink]="['/heros']" class="btn btn-outline-danger btn-block">Back</a>
+    </div>
+    <div class="col-8">
+      <h3> {{heros.nombre}} </h3>
+      <hr>
+      <p class="text-capitalize"> {{ heros.bio }}</p>
+      <img *ngIf="heros.casa === 'DC'" src="assets/Img/dc.jpg" height="150">
+      <img *ngIf="heros.casa === 'Marvel'" src="assets/Img/marvel (2).png" height="150"> 
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue-gradient mt-5">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> TheFather</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
